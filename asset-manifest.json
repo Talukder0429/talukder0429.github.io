@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/static/js/main.5bfda900.chunk.js",
-    "main.js.map": "/static/js/main.5bfda900.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5bff0579.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5bff0579.js.map",
-    "static/js/2.e4189df9.chunk.js": "/static/js/2.e4189df9.chunk.js",
-    "static/js/2.e4189df9.chunk.js.map": "/static/js/2.e4189df9.chunk.js.map",
-    "static/js/3.35f0cc65.chunk.js": "/static/js/3.35f0cc65.chunk.js",
-    "static/js/3.35f0cc65.chunk.js.map": "/static/js/3.35f0cc65.chunk.js.map",
+    "main.css": "/static/css/main.4a4fe657.chunk.css",
+    "main.js": "/static/js/main.342dcb45.chunk.js",
+    "main.js.map": "/static/js/main.342dcb45.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.88d00a66.js",
+    "runtime-main.js.map": "/static/js/runtime-main.88d00a66.js.map",
+    "static/js/2.33620180.chunk.js": "/static/js/2.33620180.chunk.js",
+    "static/js/2.33620180.chunk.js.map": "/static/js/2.33620180.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.e4189df9.chunk.js.LICENSE.txt": "/static/js/2.e4189df9.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "static/css/main.4a4fe657.chunk.css.map": "/static/css/main.4a4fe657.chunk.css.map",
+    "static/js/2.33620180.chunk.js.LICENSE.txt": "/static/js/2.33620180.chunk.js.LICENSE.txt",
+    "static/media/git.4777ca1a.png": "/static/media/git.4777ca1a.png",
+    "static/media/gmd-demo.9a5688f4.png": "/static/media/gmd-demo.9a5688f4.png",
+    "static/media/html.a577af37.png": "/static/media/html.a577af37.png",
+    "static/media/java.f5dd86c3.png": "/static/media/java.f5dd86c3.png",
+    "static/media/lv-demo.2dbd6c2e.png": "/static/media/lv-demo.2dbd6c2e.png",
+    "static/media/matplotlib.fd92e441.png": "/static/media/matplotlib.fd92e441.png",
+    "static/media/mpl-demo.d26526f9.png": "/static/media/mpl-demo.d26526f9.png",
+    "static/media/mysql.ad4c4ae7.png": "/static/media/mysql.ad4c4ae7.png",
+    "static/media/numpy.7d3b0496.png": "/static/media/numpy.7d3b0496.png",
+    "static/media/socket.38c9006c.png": "/static/media/socket.38c9006c.png",
+    "static/media/travis.21e7b8e3.png": "/static/media/travis.21e7b8e3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5bff0579.js",
-    "static/js/2.e4189df9.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.5bfda900.chunk.js"
+    "static/js/runtime-main.88d00a66.js",
+    "static/js/2.33620180.chunk.js",
+    "static/css/main.4a4fe657.chunk.css",
+    "static/js/main.342dcb45.chunk.js"
   ]
 }
