@@ -11,6 +11,8 @@ body {
 
 #name {
   color: greenyellow;
+  font-size: 72px;
+  padding: 1rem;
 }
 
 .parallax {
