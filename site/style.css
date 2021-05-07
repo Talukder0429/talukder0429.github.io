@@ -9,9 +9,13 @@ body {
   background-color: gray;
 }
 
+a:link {
+  color: whitesmoke;
+}
+
 #name {
   color: greenyellow;
-  font-size: 96px;
+  font-size: 7vh;
   padding: 1rem;
 }
 
@@ -20,6 +24,20 @@ body {
   color: yellow;
   padding: 1rem;
   padding-top: 0;
+}
+
+#contact {
+  padding-bottom: 1rem;
+}
+
+#contact span {
+  color: white;
+  padding: 0 0.5rem;
+}
+
+#contact img {
+  height: 24px;
+  vertical-align: middle;
 }
 
 .parallax {
@@ -80,5 +98,9 @@ footer img {
 @media only screen and (max-device-width: 800px) {
   .parallax {
     background-attachment: scroll;
+  }
+
+  #contact span {
+    display: block;
   }
 }
