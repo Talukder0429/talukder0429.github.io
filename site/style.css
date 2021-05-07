@@ -67,8 +67,12 @@ footer {
   color: whitesmoke;
 }
 
+footer h2 {
+  display: inline;
+}
+
 footer img {
-  height: 24px;
+  height: 32px;
   padding: 0.25rem;
   vertical-align: middle;
 }
