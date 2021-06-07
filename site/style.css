@@ -40,44 +40,25 @@ a:link {
   vertical-align: middle;
 }
 
-.parallax {
-  /* Set a specific height */
-  min-height: 50vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  color: white;
-}
-
-.parallax i {
-  height: 50vh;
-  font-size: 42px;
+.section {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-#thermal {
-  background-image: url("thermal.jpg");
+.section img {
+  width: 100%;
 }
 
-#bit {
-  background-image: url("bit.jpg");
+.lentil > div {
+  width: calc(100% / 3);
+  width: 100%;
 }
 
-#lignite {
-  background-image: url("lignite.jpg");
+.bean > div {
+  width: 50%;
+  width: 100%;
 }
 
-#steel {
-  background-image: url("steel.jpg");
-}
-
-#ship {
+.wheat > div {
   width: 100%;
 }
 
@@ -96,10 +77,6 @@ footer img {
 }
 
 @media only screen and (max-device-width: 800px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-
   #contact span {
     display: block;
   }
