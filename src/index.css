@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ShareTech";
+  src: url("./fonts/ShareTech-Regular.ttf");
+}
+
+@font-face {
+  font-family: "ShareTechMono";
+  src: url("./fonts/ShareTechMono-Regular.ttf");
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 18px;
+}
+
+a {
+  color: theme("colors.secondary");
+}
+
+p {
+  text-indent: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style-position: inside;
+}
+li::marker {
+  content: "> ";
+}

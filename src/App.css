@@ -1,0 +1,39 @@
+:root {
+  background-color: theme("colors.darker");
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.05em solid theme("colors.secondary");
+  white-space: nowrap;
+  line-height: 1;
+  animation: typing 1s steps(15, end), blink-caret 1s 1.75s infinite;
+}
+
+.card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 320px;
+  height: 480px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: theme("colors.secondary");
+  }
+  50% {
+    border-color: transparent;
+  }
+}
