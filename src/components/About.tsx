@@ -1,35 +1,27 @@
-const About = () => {
-  return (
-    <div id="about" className="py-4">
-      <h1>About Me</h1>
-      <ul className="flex flex-col gap-4">
-        <li>
-          I always look forward to getting on my road bike and hitting the
-          trails during good weather.
-        </li>
-        <li>
-          I love gaming with friends, sticking mostly to board games and video
-          games.
-        </li>
-        <li>
-          Deep interest in all things astrophysics, with one of my all time
-          favorite games being{" "}
-          <a
-            href="https://www.kerbalspaceprogram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+import { about, stack } from "../content";
+import Prompt from "./Prompt";
+
+const About = () => (
+  <>
+    <section aria-label="Stack" className="flex flex-col gap-4 pb-16 sm:pb-24">
+      <Prompt>echo $STACK</Prompt>
+      <ul className="m-0 flex list-none flex-wrap gap-2 p-0 font-mono text-[15px]">
+        {stack.map((tech) => (
+          <li
+            key={tech}
+            className="rounded border border-line-strong px-3 py-1.5"
           >
-            KSP
-          </a>
-          .
-        </li>
-        <li>
-          Bit of a computer hardware enthusiast; I try to keep up-to-date on the
-          latest ongoings in the industry.
-        </li>
+            {tech}
+          </li>
+        ))}
       </ul>
-    </div>
-  );
-};
+    </section>
+
+    <section id="about" className="flex flex-col gap-4 pb-16 sm:pb-24">
+      <Prompt>cat about.txt</Prompt>
+      <p className="m-0 max-w-[720px] text-body">{about}</p>
+    </section>
+  </>
+);
 
 export default About;

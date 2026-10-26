@@ -1,20 +1,27 @@
-import "./App.css";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-import Landing from "./components/Landing";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Log from "./components/Log";
+import Nav from "./components/Nav";
+import Notes from "./components/Notes";
 import Projects from "./components/Projects";
+import Work from "./components/Work";
 
-const App = () => {
-  return (
-    <div className="container max-w-4xl mx-auto px-4 h-full text-primary">
-      <Landing />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+const App = () => (
+  <>
+    <Nav />
+    <div className="mx-auto max-w-[1040px] px-6">
+      <main>
+        <Hero />
+        <Work />
+        <Notes />
+        <Log />
+        <Projects />
+        <About />
+      </main>
+      <Footer />
     </div>
-  );
-};
+  </>
+);
 
 export default App;

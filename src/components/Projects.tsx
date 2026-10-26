@@ -1,59 +1,33 @@
-import gmd from "../images/gmd.png";
-import plot from "../images/plot.png";
-import so3 from "../images/so3.png";
+import { project } from "../content";
+import screenshot from "../images/so3-calculator.png";
+import Prompt from "./Prompt";
 
-const Card = (props: {
-  img: string;
-  repo: string;
-  title: string;
-  stack: string;
-}) => {
-  return (
-    <div
-      className="card rounded-2xl scale-95 hover:scale-100 transition-transform"
-      style={{
-        backgroundImage: `linear-gradient(transparent, #2E3642), url(${props.img})`,
-      }}
+const Projects = () => (
+  <section id="projects" className="flex flex-col gap-6 pb-16 sm:pb-24">
+    <Prompt>ls projects/</Prompt>
+    <a
+      href={project.url}
+      className="group grid grid-cols-1 gap-6 rounded-xl border border-line p-6 text-fg hover:border-accent hover:text-fg hover:no-underline md:grid-cols-2"
     >
-      <a
-        href={props.repo}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="h-full p-4 flex flex-col justify-end"
-      >
-        <h2>{props.title}</h2>
-        <span className="text-lg italic">{props.stack}</span>
-      </a>
-    </div>
-  );
-};
-
-const Projects = () => {
-  return (
-    <div id="projects" className="py-4">
-      <h1>Recent Projects</h1>
-      <div className="flex flex-wrap justify-center gap-y-2">
-        <Card
-          img={so3}
-          repo="https://github.com/Talukder0429/so3ic"
-          title="SO3 Crafting Calculator"
-          stack="PERN stack | TypeScript"
-        />
-        <Card
-          img={plot}
-          repo="https://github.com/Talukder0429/matplotlib_legend_checkbox"
-          title="Subplot Visibility Toggle"
-          stack="Python | Matplotlib"
-        />
-        <Card
-          img={gmd}
-          repo="https://github.com/Talukder0429/guessmydrawing-io"
-          title="GuessMyDrawing.io"
-          stack="JavaScript | Socket.IO"
-        />
+      <img
+        src={screenshot}
+        alt="The calculator showing a 95% success chance and conflicting prices for Atomic Gauntlets"
+        width={1120}
+        height={1400}
+        loading="lazy"
+        className="h-56 w-full rounded-md bg-card object-cover object-center sm:h-64"
+      />
+      <div className="flex flex-col gap-2.5">
+        <h3 className="m-0 text-[22px] font-semibold text-accent group-hover:underline">
+          {project.title}
+        </h3>
+        <p className="m-0 text-body">{project.description}</p>
+        <div className="font-mono text-sm text-muted">
+          {project.stack.join(" · ")}
+        </div>
       </div>
-    </div>
-  );
-};
+    </a>
+  </section>
+);
 
 export default Projects;
