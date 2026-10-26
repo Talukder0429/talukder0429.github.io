@@ -1,4 +1,4 @@
-function Landing() {
+const Landing = () => {
   return (
     <div className="h-full w-fit mx-auto flex flex-col justify-center">
       <div style={{ fontSize: "clamp(1rem, 5vw, 2rem)", opacity: "90%" }}>
@@ -26,6 +26,6 @@ function Landing() {
       </div>
     </div>
   );
-}
+};
 
 export default Landing;

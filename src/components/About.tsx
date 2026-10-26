@@ -1,4 +1,4 @@
-function About() {
+const About = () => {
   return (
     <div id="about" className="py-4">
       <h1>About Me</h1>
@@ -30,6 +30,6 @@ function About() {
       </ul>
     </div>
   );
-}
+};
 
 export default About;

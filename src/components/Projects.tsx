@@ -1,6 +1,6 @@
-import so3 from "../images/so3.png";
-import plot from "../images/plot.png";
 import gmd from "../images/gmd.png";
+import plot from "../images/plot.png";
+import so3 from "../images/so3.png";
 
 const Card = (props: {
   img: string;
@@ -28,7 +28,7 @@ const Card = (props: {
   );
 };
 
-function Projects() {
+const Projects = () => {
   return (
     <div id="projects" className="py-4">
       <h1>Recent Projects</h1>
@@ -54,6 +54,6 @@ function Projects() {
       </div>
     </div>
   );
-}
+};
 
 export default Projects;

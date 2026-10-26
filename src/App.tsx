@@ -5,7 +5,7 @@ import Experience from "./components/Experience";
 import Landing from "./components/Landing";
 import Projects from "./components/Projects";
 
-function App() {
+const App = () => {
   return (
     <div className="container max-w-4xl mx-auto px-4 h-full text-primary">
       <Landing />
@@ -15,6 +15,6 @@ function App() {
       <Contact />
     </div>
   );
-}
+};
 
 export default App;

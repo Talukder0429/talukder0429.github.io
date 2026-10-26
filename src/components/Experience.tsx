@@ -1,40 +1,38 @@
-import { ReactNode } from "react";
+const Event = (props: {
+  name: string;
+  href: string;
+  startDate: string;
+  endDate: string;
+  showTopLine?: boolean;
+  showBottomLine?: boolean;
+}) => {
+  return (
+    <div className="flex flex-col justify-center items-center order-2">
+      <div
+        className={props.showTopLine ? "h-full w-0 border-x-2" : "h-full w-0"}
+      />
+      <div className="text-sm py-1">{props.endDate}</div>
+      <a
+        className="text-center"
+        href={props.href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h2 className="leading-none">{props.name}</h2>
+      </a>
+      <div className="text-sm py-1">{props.startDate}</div>
+      <div
+        className={
+          props.showBottomLine ? "h-full w-0 border-x-2" : "h-full w-0"
+        }
+      />
+    </div>
+  );
+};
 
-function Experience() {
-  const Event = (props: {
-    name: string;
-    href: string;
-    startDate: string;
-    endDate: string;
-    showTopLine?: boolean;
-    showBottomLine?: boolean;
-  }) => {
-    return (
-      <div className="flex flex-col justify-center items-center order-2">
-        <div
-          className={props.showTopLine ? "h-full w-0 border-x-2" : "h-full w-0"}
-        />
-        <div className="text-sm py-1">{props.endDate}</div>
-        <a
-          className="text-center"
-          href={props.href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="leading-none">{props.name}</h2>
-        </a>
-        <div className="text-sm py-1">{props.startDate}</div>
-        <div
-          className={
-            props.showBottomLine ? "h-full w-0 border-x-2" : "h-full w-0"
-          }
-        />
-      </div>
-    );
-  };
+const grid = "grid grid-cols-[0_85px_1fr] md:grid-cols-[1fr_115px_1fr]";
 
-  const grid = "grid grid-cols-[0_85px_1fr] md:grid-cols-[1fr_115px_1fr]";
-
+const Experience = () => {
   return (
     <div id="experience" className="py-4">
       <h1>Professional Experience</h1>
@@ -124,6 +122,6 @@ function Experience() {
       </div>
     </div>
   );
-}
+};
 
 export default Experience;

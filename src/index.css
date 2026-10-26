@@ -1,6 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme static {
+  --color-*: initial;
+  --color-dark: #30475e;
+  --color-darker: #222831;
+  --color-primary: white;
+  --color-secondary: #f2a365;
+
+  --font-sans: "ShareTech";
+  --font-mono: "ShareTechMono";
+}
 
 @font-face {
   font-family: "ShareTech";
@@ -20,7 +29,7 @@ body {
 }
 
 a {
-  color: theme("colors.secondary");
+  color: var(--color-secondary);
 }
 
 p {

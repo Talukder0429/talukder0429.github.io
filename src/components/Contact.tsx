@@ -1,4 +1,4 @@
-function Contact() {
+const Contact = () => {
   return (
     <div id="contact" className="py-4">
       <h1>Contact Me</h1>
@@ -30,6 +30,6 @@ function Contact() {
       </ul>
     </div>
   );
-}
+};
 
 export default Contact;

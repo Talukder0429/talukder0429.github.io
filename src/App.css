@@ -1,13 +1,15 @@
 :root {
-  background-color: theme("colors.darker");
+  background-color: var(--color-darker);
 }
 
 .typewriter {
   overflow: hidden;
-  border-right: 0.05em solid theme("colors.secondary");
+  border-right: 0.05em solid var(--color-secondary);
   white-space: nowrap;
   line-height: 1;
-  animation: typing 1s steps(15, end), blink-caret 1s 1.75s infinite;
+  animation:
+    typing 1s steps(15, end),
+    blink-caret 1s 1.75s infinite;
 }
 
 .card {
@@ -31,7 +33,7 @@
 @keyframes blink-caret {
   from,
   to {
-    border-color: theme("colors.secondary");
+    border-color: var(--color-secondary);
   }
   50% {
     border-color: transparent;
